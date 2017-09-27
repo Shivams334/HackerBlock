@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class PrimeNO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	  
+		  Scanner sc = new  Scanner(System.in);
+		  System.out.println("Enter the number");
+			
+			int num = sc.nextInt();
+			int i = 2;
+			boolean flag = true;
+			
+			while(i < num){
+			    if(num % i == 0){
+			         flag = false;
+			         break;
+			    }
+			    i = i + 1;
+			} 
+			 
+			 if(flag == false){
+			    System.out.println("Not Prime");
+			 }
+			 else{
+			     System.out.println("Prime");
+			 }
+			
+			}
+	
+
+}
+
